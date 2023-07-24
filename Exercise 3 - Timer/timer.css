@@ -1,4 +1,26 @@
 #myTimer {
     color: red;
-    font-size: 64px;
+    font-size: 80px;
+}
+
+#line1 {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+#line1 button{
+width: 60px;
+}
+#line2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 30px;
+    height: 60px;
+}
+button{
+    background: aquamarine;
+    border-color: gray;
+    font-size: 30px;
+    width: 170px;
 }

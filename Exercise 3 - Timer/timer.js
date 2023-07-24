@@ -13,34 +13,13 @@ function reset() {
 }
 function countDown() {
     const count = document.querySelector('#timer')
-    let start = document.querySelector('#start');
-    let stop = document.querySelector('#stop');
-    start.addEventListener('click', function() {
-        let timerId = setInterval(function() {
-            console.log('!')
-        }, 1000);
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // const interval = setInterval(() => {
-    //     if (count.textContent === '0') {
-    //         clearInterval(interval)
-    //         document.querySelector('.start').classList.add('hidden')
-    //     } else {
-    //         count.textContent = parseInt(count.textContent) - 1
-    //     }
-    // }, 1000)
-    // return interval
+    const interval = setInterval(() => {
+        if (count.textContent === '0') {
+            clearInterval(interval)
+            document.querySelector('.start').classList.add('hidden')
+        } else {
+            count.textContent = parseInt(count.textContent) - 1
+        }
+    }, 1000)
+    return interval
 }

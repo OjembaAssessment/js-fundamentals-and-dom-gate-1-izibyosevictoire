@@ -13,13 +13,16 @@ function reset() {
 }
 function countDown() {
     const count = document.querySelector('#timer')
+    const Start = document.querySelector('#start')
     const interval = setInterval(() => {
         if (count.textContent === '0') {
             clearInterval(interval)
-            document.querySelector('.start').classList.add('hidden')
+           document.getElementById("start").innerHTML= "Stop"
         } else {
             count.textContent = parseInt(count.textContent) - 1
+          
         }
     }, 1000)
     return interval
 }
+
